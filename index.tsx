@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
 import { 
@@ -318,6 +319,7 @@ const MOMENTS = [
 ];
 
 const LINKS = [
+  { label: "DECISIÓN 83-A", url: "https://drive.google.com/file/d/1zEb3UqQRqrbKeWeJPT6mcpGq5uazTW7U/view?usp=sharing" },
   { label: "SANCIONES POR INCUMPLIMIENTO", url: "https://docs.google.com/document/d/1ZStxycZAWxByyCBxn2Cx9c3XpxgYjrmCAcHtv_m69pE/edit?tab=t.0" },
   { label: "PORTAL CEDIS EXHIBICIÓN", url: "https://sites.google.com/coppel.com/portal-cedis-exhibicion/" },
   { label: "MANUAL MC 'RECUPERACIÓN ÁGIL TRAS SINIESTROS'", url: "https://knlcoppel.reflexisinc.com/kernel/views/authenticate/web/COPPEL.view" },
@@ -553,8 +555,6 @@ const App = () => {
     };
 
     document.addEventListener('fullscreenchange', handleFullscreenChange);
-    // Listen to vendor prefixed versions for broad compatibility if necessary, 
-    // though 'fullscreenchange' is standard in most modern contexts.
     
     return () => {
       document.removeEventListener('fullscreenchange', handleFullscreenChange);
